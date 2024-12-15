@@ -1,27 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Магазин | Standoff 2</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section>
-    <div class="logo_wrap">
-      <img src="https://s3-alpha-sig.figma.com/img/5f71/1249/2b89d60956cf79a1b0edfddc7633c06a?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AMXZ0F6InsS80-jvJt7yK-4zb6UOpCD~d5jY4ukSOqJ2jlUzXSVnUNK7B-KQqAYTKMHWzAX8V2hQuCMxhvPr8xUT~anx7gtqFFIZ9WHIcgbh3ErJRzCAz9y5slkhxZpkdVU5GlYM4pBXDOFMD1k3QCLDqZo4C6HsQzlxXaWGXJZiC1YncfIjDhFxwAp5M-a1OWOE-Nd1dwuFlrGxGZ6k67sdWF77PvUdugrdugVakr20KCdzVCSRUjKfcz5g1lyXRxOSoErqd~q3yDWpMYl5euXWAzWWHQuMrMTxLiVIXd00F5NbLGjYRP6GJeqXNnuUTkNFa7V~faBb8OwsmN4RoQ__" alt="">
-      <span>МАГАЗИН</span>
-      <p>Официальный магазин Standoff 2<br>Совершайте покупки без помех и ограничений</p>
-    </div>
-    <div class="main_wrap">
-      <img src="check-circle-outline_119294.png" alt="">  
-      <h1>УСПЕХ</h1>
-      <p>Благодарим за покупку! Она отобразиться в игре в ближайшее время.</p>
-      <a href="https://store.standoff2.com/">В МАГАЗИН</a>
-    </div>
-    <div class="footer_wrap">
-      <img src="Container.png" alt="">
-    </div>
-  </section>
-</body>
-</html>
+* {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://s3-alpha-sig.figma.com/img/1db5/33a1/cd02481cde71afe145248aca0fc9966f?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Y~t1uAAVr2cRO3kW75633DH4HeyWHdBpKXUBJLWRvQ0mvoBThVVJKWURbiIKC-iMFY4OXCAlWMwp6ty6i55jOfxeZr2s5XIOktUMKnsN9KLdT71dtxyUqTNKkNqVPW2Ipqsvt1-qqTMV9ZiNSYYN3vr7WwvQsho6Z0q47wfoVMtaiBVt0bLbI0pvAh-i8Lla32EgeRkizC-cbPBQuJPSRjO1egdlc5IPN6VRYTKg4Cedz17MG7nPSwW4kuaxffX2XNTx8mf8p00Ga-AnK-e8EztzXcoHJFyyhLXOkPKnhZZ4etWYPyLk6wLJCU3OQzkMSKH-715uzC9YpaNR1-jrsg__");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    flex-direction: column;
+
+}
+
+.logo_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo_wrap img {
+    width: 162px;
+    height: 31.15px;
+    align-self: center;
+}
+
+.logo_wrap span {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--color-white-solid, #FFFFFF);
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.logo_wrap p {
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 15.61px;
+    font-weight: 400;
+    line-height: var(--lineheight18);
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+
+.main_wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 960px;
+    height: 188px;
+    padding: 40px 16px 60px 16px;
+    background-color:rgba(0, 0, 0, 0.4);
+    align-self: center;
+    margin-top: 60px;
+}
+
+.main_wrap img {
+    width: 62px;
+    height: 62px;
+}
+
+.main_wrap h1 {
+    font-family: sans-serif;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: var(--lineheight23);
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-variation-settings: 'slnt' 0;
+    color: white;
+}
+
+.main_wrap p{
+    font-family: sans-serif;
+    font-size: 15.33px;
+    font-weight: 400;
+    line-height: var(--lineheight18);
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main_wrap a {
+    display: flex;
+    width: 170px;
+    min-height: 40px;
+    border-radius: 2px 0px 0px 0px;
+    background-color: rgba(131, 154, 202, 1);
+    font-family: sans-serif;
+    font-size: 17.97px;
+    font-weight: 400;
+    line-height: var(--lineheight23);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer_wrap {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+}
